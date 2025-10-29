@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelas xi rpl | Website Kelas</title>
+  <link rel="icon" type="image/png" href="logokelas.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+  <nav>
+    <ul>
+      <li><a href="index.html">🏠 Beranda</a></li>
+      <li><a href="daftarsiswa.html">👩‍🎓 Daftar Siswa</a></li>
+      <li><a href="strukturorganisasi.html">🌸 Struktur Organisasi</a></li>
+      <li><a href="jadwalpelajaran.html">📚 Jadwal Pelajaran</a></li>
+      <li><a href="jadwalpiket.html">🧹 Jadwal Piket</a></li>
+      <li><a href="gurupengajar.html">👩‍🏫 Guru Pengajar</a></li>
+      <li><a href="galeri.html">📸 Galeri</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- 🌼 KONTEN UTAMA -->
+  <div class="container">
+    <h1>Selamat Datang di Website Kelas Kami!</h1>
+    <img src="logokelas.png" alt="Logo Kelas" class="logo-kelas">
+
+    <h2>Tentang Kelas Kami</h2>
+    <p>
+      ✨ Sebuah ruang kecil dengan sejuta cerita.
+          Di sinilah ide tumbuh, mimpi disusun, dan tawa tak pernah hilang.
+          Kami percaya — setiap hari di kelas ini adalah langkah baru menuju versi terbaik dari diri kami sendiri. 🌷
+    </p>
+
+    <h2>Visi & Misi Kelas</h2>
+    <ul>
+      <li><b>Visi:</b> Menjadi kelas yang berprestasi, solid, dan berakhlak baik.</li>
+      <li><b>Misi:</b></li>
+      <ul>
+        <li>Menumbuhkan rasa tanggung jawab dan kerja sama.</li>
+        <li>Menjaga keharmonisan dan kedisiplinan di kelas.</li>
+        <li>Mendukung setiap anggota kelas untuk berkembang sesuai potensinya.</li>
+      </ul>
+    </ul>
+
+    <h2>Kutipan Favorit</h2>
+    <p><i>"Bersama, kita tumbuh — bukan hanya sebagai teman sekelas, tapi sebagai keluarga kecil yang saling mendukung."</i></p>
+  </div>
+  <!-- Tombol play musik -->
+<button id="play-music">🎵 Putar Musik</button>
+
+<audio id="backsound" loop>
+  <source src="audio.mpeg" type="audio/mpeg">
+</audio>
+
+<script>
+  const btn = document.getElementById("play-music");
+  const audio = document.getElementById("backsound");
+
+  btn.addEventListener("click", () => {
+    audio.play();
+    btn.style.display = "none"; // tombol hilang setelah diklik
+  });
+</script>
+
+
+  <!-- 💫 FOOTER -->
+  <footer>
+    &copy; 2025 Kelas xi rpl.smkntambakboyo | Dibuat oleh kusnul&supri
+  </footer>
+</body>
+</html>
