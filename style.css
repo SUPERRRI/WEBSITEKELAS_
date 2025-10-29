@@ -1,0 +1,1030 @@
+/* 🌸 KONTEN UTAMA SUPER AESTHETIC (versi biru lembut) */
+.container {
+  max-width: 900px;
+  margin: 60px auto;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 30px;
+  box-shadow: 0 12px 30px rgba(185, 206, 235, 0.4);
+  padding: 60px;
+  text-align: left;
+  backdrop-filter: blur(12px);
+  position: relative;
+  overflow: hidden;
+  animation: fadeSlide 1s ease forwards;
+}
+
+/* 🌈 efek gradasi lembut di pinggir container */
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #DEECFC 0%, #fff 40%, #B9CEEB 100%);
+  opacity: 0.6;
+  z-index: -1;
+}
+
+/* 🌷 efek floating halus */
+.container:hover {
+  transform: translateY(-5px);
+  transition: 0.6s ease;
+  box-shadow: 0 16px 40px rgba(135, 168, 208, 0.35);
+}
+
+/* 💕 JUDUL SEKSION DENGAN GARIS GLOW */
+.container h2 {
+  font-family: 'Baloo 2', cursive;
+  color: #87A8D0;
+  font-size: 1.6rem;
+  margin-top: 45px;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 6px;
+  opacity: 0;
+  transform: translateY(25px);
+  animation: fadeSlide 1s ease forwards;
+}
+
+.container h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 70%;
+  height: 4px;
+  background: linear-gradient(90deg, #B9CEEB, #DEECFC, #87A8D0);
+  border-radius: 10px;
+  transition: 0.3s ease;
+  box-shadow: 0 0 6px #B9CEEB;
+}
+
+/* ✨ efek glowing underline saat hover */
+.container h2:hover::after {
+  width: 100%;
+  box-shadow: 0 0 12px #87A8D0;
+}
+
+/* 🌸 TEKS PARAGRAF */
+.container p,
+.container li {
+  font-size: 16px;
+  color: #5A6B8C; /* 💙 biru lembut agar enak dibaca */
+  line-height: 1.9;
+  font-family: 'Quicksand', sans-serif;
+  opacity: 0;
+  transform: translateY(25px);
+  animation: fadeSlide 1s ease forwards;
+}
+
+
+/* 🌼 UL & LIST */
+.container ul {
+  margin-left: 20px;
+  margin-bottom: 25px;
+  opacity: 0;
+  transform: translateY(25px);
+  animation: fadeSlide 1s ease forwards;
+}
+
+/* 💫 KUTIPAN FAVORIT */
+.container i {
+  display: block;
+  background: linear-gradient(145deg, #f8fbff, #fff);
+  border-left: 6px solid #B9CEEB;
+  padding: 18px 22px;
+  border-radius: 14px;
+  font-style: italic;
+  color: #555;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+  margin-top: 18px;
+  transition: 0.4s ease;
+  opacity: 0;
+  transform: translateY(25px);
+  animation: fadeSlide 1s ease forwards;
+}
+
+.container i:hover {
+  transform: scale(1.03);
+  background: linear-gradient(145deg, #DEECFC, #f6f9ff);
+  box-shadow: 0 8px 20px rgba(135, 168, 208, 0.3);
+}
+
+/* 🌟 ANIMASI FADE SLIDE */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === STYLE UMUM === */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #DEECFC;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Dekorasi diagonal di atas dan bawah */
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200px;
+  background: #B9CEEB;
+  z-index: -1;
+}
+
+body::before {
+  top: -60px;
+  left: -50px;
+  transform: rotate(-5deg);
+}
+
+body::after {
+  bottom: -60px;
+  right: -50px;
+  transform: rotate(-5deg);
+}
+
+/* === NAVBAR === */
+.navbar {
+  background: linear-gradient(135deg, #B9CEEB, #87A8D0);
+  box-shadow: 0 8px 20px rgba(135, 168, 208, 0.3);
+  padding: 15px 0;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  animation: fadeDown 1s ease;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* efek naik-turun lembut */
+.navbar li:nth-child(odd) {
+  transform: translateY(-6px);
+}
+.navbar li:nth-child(even) {
+  transform: translateY(6px);
+}
+
+.navbar a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  display: inline-block;
+}
+
+.navbar a:hover {
+  background: white;
+  color: #87A8D0;
+  box-shadow: 0 4px 12px rgba(135, 168, 208, 0.4);
+  transform: scale(1.08);
+}
+
+/* animasi halus tiap item */
+.navbar li {
+  transition: transform 0.3s ease;
+}
+
+.navbar li:hover {
+  transform: translateY(-3px);
+}
+
+/* animasi masuk lembut */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 💠 FOTO / LOGO KELAS AESTHETIC */
+.logo-kelas {
+  display: block;
+  margin: 0 auto 25px auto;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #DEECFC; /* biru muda lembut */
+  box-shadow: 0 8px 20px rgba(137, 170, 210, 0.4); /* bayangan biru pastel */
+  background: radial-gradient(circle at top, #DEECFC, #B9CEEB, #87A8D0);
+  padding: 8px;
+  transition: all 0.4s ease;
+}
+
+/* ✨ Efek glow lembut saat hover */
+.logo-kelas:hover {
+  transform: scale(1.05) rotate(2deg);
+  box-shadow: 0 10px 30px rgba(137, 170, 210, 0.55);
+  border-color: #B9CEEB;
+  background: radial-gradient(circle at bottom, #B9CEEB, #DEECFC);
+}
+
+
+/* === DAFTAR SISWA AESTHETIC STYLE (PASTEL BLUE DREAMY) === */
+:root {
+  --primary: #87A8D0;     /* Biru lembut utama */
+  --accent: #B9CEEB;      /* Aksen biru pastel */
+  --bg: #DEECFC;          /* Background lembut */
+  --text: #2F3C4F;        /* Warna teks abu kebiruan */
+  --radius: 18px;
+  --shadow: 0 8px 25px rgba(137, 170, 210, 0.25);
+}
+
+/* === HALAMAN UTAMA === */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #DEECFC 0%, #B9CEEB 50%, #E6F2FF 100%);
+  background-attachment: fixed;
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* === JUDUL HALAMAN === */
+h1 {
+  text-align: center;
+  color: var(--primary);
+  font-size: 2.3rem;
+  margin-top: 40px;
+  text-shadow: 1px 2px 6px rgba(137, 170, 210, 0.4);
+  letter-spacing: 1px;
+}
+
+h2 {
+  text-align: center;
+  color: var(--accent);
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+/* === GRID KARTU SISWA === */
+.grid-siswa {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 50px 60px;
+}
+
+/* === KARTU SISWA === */
+.card-siswa {
+  background: linear-gradient(145deg, #ffffff 0%, #DEECFC 100%);
+  border: 2px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  width: 230px;
+  text-align: center;
+  padding: 20px;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ✨ efek cahaya lembut di belakang kartu */
+.card-siswa::before {
+  content: "";
+  position: absolute;
+  inset: -30%;
+  background: radial-gradient(circle, rgba(185, 206, 235, 0.4), transparent 70%);
+  filter: blur(25px);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+}
+
+.card-siswa:hover::before {
+  opacity: 1;
+}
+
+.card-siswa:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(137, 170, 210, 0.45);
+}
+
+/* === FOTO SISWA === */
+.card-siswa img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 3px solid var(--primary);
+  box-shadow: 0 4px 12px rgba(137, 170, 210, 0.25);
+  transition: all 0.3s ease;
+}
+
+.card-siswa:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(137, 170, 210, 0.4);
+}
+
+/* === NAMA SISWA === */
+.card-siswa h3 {
+  color: var(--text);
+  margin: 14px 0 6px 0;
+  font-size: 17px;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
+/* === INFORMASI SISWA (Nomor Absen) === */
+.card-siswa p {
+  margin: 5px 0;
+  font-size: 13px;
+  color: white;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.card-siswa p:hover {
+  background: linear-gradient(90deg, var(--accent), #a7c3e8);
+}
+
+/* === KETERANGAN TAMBAHAN (OSIS / UKS / DEWAN AMBALAN) === */
+.card-siswa .keterangan {
+  display: block;
+  background: linear-gradient(145deg, var(--accent), #a7c3e8);
+  color: #fff;
+  margin-top: 8px;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: 0 3px 12px rgba(137, 170, 210, 0.4);
+  position: relative;
+  z-index: 1;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .grid-siswa {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    padding: 20px;
+  }
+
+  .card-siswa {
+    width: 180px;
+    padding: 15px;
+  }
+
+  .card-siswa img {
+    height: 180px;
+  }
+
+  .card-siswa h3 {
+    font-size: 15px;
+  }
+}
+
+/* === STRUKTUR ORGANISASI (DESAIN KARTU AESTHETIC BIRU PASTEL) === */
+:root {
+  --primary: #87A8D0;     /* Biru lembut utama */
+  --accent: #B9CEEB;      /* Biru muda pastel */
+  --bg: #DEECFC;          /* Latar belakang lembut */
+  --text: #2F3C4F;        /* Teks abu kebiruan */
+  --radius: 16px;
+  --shadow: 0 6px 18px rgba(137, 170, 210, 0.25);
+}
+
+/* === KONTAINER STRUKTUR === */
+.struktur-container {
+  text-align: center;
+  margin-top: 40px;
+  background: linear-gradient(135deg, #DEECFC 0%, #B9CEEB 50%, #EAF3FF 100%);
+  padding: 60px 40px;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(137, 170, 210, 0.2);
+}
+
+/* === BAGIAN WALI KELAS === */
+.wali {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+/* === GRID STRUKTUR === */
+.grid-struktur {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* === KARTU STRUKTUR === */
+.card-struktur {
+  background: rgba(255, 255, 255, 0.85);
+  border: 2px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  width: 220px;
+  text-align: center;
+  padding: 18px;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(8px);
+  position: relative;
+  overflow: hidden;
+}
+
+/* ✨ efek glow lembut */
+.card-struktur::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background: radial-gradient(circle, rgba(185, 206, 235, 0.5), transparent 70%);
+  filter: blur(30px);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+}
+
+.card-struktur:hover::before {
+  opacity: 1;
+}
+
+.card-struktur:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(137, 170, 210, 0.4);
+}
+
+/* === FOTO STRUKTUR === */
+.card-struktur img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid var(--primary);
+  box-shadow: 0 4px 10px rgba(137, 170, 210, 0.25);
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.card-struktur:hover img {
+  transform: scale(1.05);
+}
+
+/* === NAMA DAN JABATAN === */
+.card-struktur h3 {
+  color: var(--text);
+  margin: 12px 0 5px 0;
+  font-size: 17px;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
+.card-struktur p {
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  color: white;
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 6px;
+  box-shadow: 0 3px 12px rgba(137, 170, 210, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.card-struktur p:hover {
+  background: linear-gradient(90deg, var(--accent), #a7c3e8);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .grid-struktur {
+    gap: 20px;
+  }
+  .card-struktur {
+    width: 180px;
+    padding: 15px;
+  }
+  .card-struktur img {
+    height: 180px;
+  }
+  .card-struktur h3 {
+    font-size: 15px;
+  }
+}
+
+/* === STYLE KHUSUS HALAMAN JADWAL PELAJARAN (AESTHETIC) === */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fafaff, #fff9f6);
+  color: #333;
+  padding: 40px 15px;
+  margin: 0;
+}
+
+.jadwal-pelajaran {
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.jadwal-pelajaran h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* === Grid sejajar semua hari dalam 1 baris === */
+.grid-jadwal {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+/* === Kotak tiap hari === */
+.card-hari {
+  flex: 0 0 220px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 14px 10px 20px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-hari:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+/* Garis warna atas */
+.card-hari::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  border-radius: 18px 18px 0 0;
+  opacity: 0.9;
+}
+
+/* Ikon pojok kanan atas */
+.card-hari::after {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 18px;
+  opacity: 0.2;
+}
+
+/* Nama hari */
+.card-hari h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 10px 0 8px;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+  display: inline-block;
+  padding-bottom: 2px;
+}
+
+/* List pelajaran */
+.card-hari ul {
+  list-style: none;
+  text-align: left;
+  padding-left: 10px;
+  margin: 0;
+}
+
+.card-hari li {
+  background: rgba(255,255,255,0.6);
+  padding: 6px 10px;
+  margin-bottom: 6px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #444;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.card-hari li:hover {
+  background: rgba(255,255,255,0.9);
+  transform: scale(1.02);
+}
+
+/* === Warna & Ikon Per Hari === */
+.senin {
+  background-color: #eef3ff;
+}
+.senin::before { background-color: #9cb8ff; }
+.senin::after { content: "📘"; }
+
+.selasa {
+  background-color: #ffecec;
+}
+.selasa::before { background-color: #ffb0b0; }
+.selasa::after { content: "📕"; }
+
+.rabu {
+  background-color: #eafff3;
+}
+.rabu::before { background-color: #a4f4c7; }
+.rabu::after { content: "📗"; }
+
+.kamis {
+  background-color: #fff7e6;
+}
+.kamis::before { background-color: #ffd789; }
+.kamis::after { content: "📒"; }
+
+.jumat {
+  background-color: #f6edff;
+}
+.jumat::before { background-color: #c7a7ff; }
+.jumat::after { content: "📔"; }
+
+/* === Responsif === */
+@media (max-width: 768px) {
+  .grid-jadwal {
+    overflow-x: auto;
+  }
+  .card-hari {
+    flex: 0 0 200px;
+  }
+}
+
+/* === STYLE KHUSUS HALAMAN JADWAL PIKET (FINAL) === */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f9fbff, #fffaf7);
+  color: #333;
+  padding: 40px 15px;
+  margin: 0;
+}
+
+.jadwal-piket {
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.jadwal-piket h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* === Grid sejajar semua hari dalam 1 baris === */
+.grid-piket {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: nowrap; /* pastikan tidak turun ke bawah */
+  gap: 15px;
+  overflow-x: auto; /* bisa digeser kalau layar kecil */
+  padding-bottom: 10px;
+}
+
+/* === Kotak tiap hari === */
+.card-hari {
+  flex: 0 0 200px; /* lebar tetap biar muat semua */
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 14px 10px 20px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-hari:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+/* Garis warna atas */
+.card-hari::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  border-radius: 18px 18px 0 0;
+  opacity: 0.9;
+}
+
+/* Ikon pojok kanan atas */
+.card-hari::after {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 18px;
+  opacity: 0.2;
+}
+
+/* Nama hari */
+.card-hari h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 10px 0 6px;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+  display: inline-block;
+  padding-bottom: 2px;
+}
+
+/* List nama siswa */
+.card-hari ol {
+  list-style: decimal;
+  text-align: left;
+  padding-left: 20px;
+  margin: 4px 0 0;
+}
+
+.card-hari li {
+  padding: 2px 0;
+  font-size: 13.5px;
+  color: #444;
+}
+
+/* === Warna & Ikon Per Hari === */
+.senin {
+  background-color: #eef3ff;
+}
+.senin::before { background-color: #9cb8ff; }
+.senin::after { content: "🧹"; }
+
+.selasa {
+  background-color: #ffecec;
+}
+.selasa::before { background-color: #ffb0b0; }
+.selasa::after { content: "🌸"; }
+
+.rabu {
+  background-color: #eafff3;
+}
+.rabu::before { background-color: #a4f4c7; }
+.rabu::after { content: "☀️"; }
+
+.kamis {
+  background-color: #fff7e6;
+}
+.kamis::before { background-color: #ffd789; }
+.kamis::after { content: "🌿"; }
+
+.jumat {
+  background-color: #f6edff;
+}
+.jumat::before { background-color: #c7a7ff; }
+.jumat::after { content: "💫"; }
+
+/* === Responsif kecil: bisa digeser, tapi tetap 1 baris === */
+@media (max-width: 768px) {
+  .grid-piket {
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+  .card-hari {
+    flex: 0 0 180px;
+  }
+}
+/* 💙 GURU PENGAJAR — Polaroid Aesthetic Blue Dream 🌤️ */
+.grid-guru {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+  margin-top: 40px;
+}
+
+/* 🎞️ Polaroid Mini Kesan Biru Pastel */
+.card-guru {
+  background: linear-gradient(180deg, #f7fbff, #e6f3ff);
+  border: 3px solid rgba(164, 196, 255, 0.8);
+  border-radius: 14px;
+  width: 170px;
+  text-align: center;
+  padding: 10px 10px 22px 10px;
+  box-shadow: 0 6px 14px rgba(164, 196, 255, 0.4);
+  position: relative;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+}
+
+.card-guru:hover {
+  /* tidak naik atau miring lagi */
+  transform: none;
+  box-shadow: 0 8px 18px rgba(120, 160, 255, 0.6);
+}
+
+/* 🖼️ Foto Guru */
+.card-guru img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #b5d1ff;
+  background: #f0f6ff;
+  box-shadow: inset 0 0 8px rgba(173, 204, 255, 0.4);
+}
+
+/* ✨ Nama Guru */
+.card-guru h3 {
+  color: #1d2b4f;
+  font-size: 15px;
+  margin: 10px 0 4px 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* 📘 Mata Pelajaran */
+.card-guru p {
+  color: #467bff;
+  font-size: 12.5px;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* 💫 Ornamen emoji lucu pojok bawah */
+.card-guru::before {
+  content: "💫";
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  font-size: 13px;
+  opacity: 0.8;
+  transform: rotate(-10deg);
+}
+
+/* ☁️ Cahaya lembut pojok kiri atas */
+.card-guru::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle, rgba(255,255,255,0.8), transparent);
+  opacity: 0.8;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* 📱 Responsif */
+@media (max-width: 768px) {
+  .grid-guru {
+    gap: 20px;
+  }
+
+  .card-guru {
+    width: 145px;
+    padding-bottom: 20px;
+  }
+
+  .card-guru img {
+    height: 110px;
+  }
+}
+/* === 💙 GALERI KELAS AESTHETIC BIRU === */
+.gallery-kelas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 10px;
+}
+
+/* 🖼️ Kartu Foto / Video */
+.gallery-item {
+  background: linear-gradient(180deg, #f8fbff, #eaf4ff);
+  border: 3px solid #b5d4ff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(150, 190, 255, 0.35);
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+
+.gallery-item:hover {
+  /* Hilangkan animasi naik */
+  transform: none;
+  box-shadow: 0 8px 22px rgba(120, 170, 255, 0.45);
+}
+
+/* 📸 Gambar & Video */
+.gallery-item img,
+.gallery-item video {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid #b5d4ff;
+  transition: none; /* Hilangkan efek zoom */
+}
+
+/* 📝 Keterangan */
+.gallery-caption {
+  padding: 12px 10px;
+  background: #f5f9ff;
+  color: #3b5f99;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  border-top: 1px dashed #b5d4ff;
+}
+
+/* 💫 Ornamen lembut pojok bawah */
+.gallery-item::after {
+  content: "💫";
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  font-size: 12px;
+  color: #a4c4ff;
+  opacity: 0.6;
+}
+
+/* 📱 Responsif */
+@media (max-width: 768px) {
+  .gallery-kelas {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 18px;
+  }
+
+  .gallery-item img,
+  .gallery-item video {
+    height: 160px;
+  }
+
+  .gallery-caption {
+    font-size: 13px;
+  }
+}
+#play-music {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #A4C8E1;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+#play-music:hover {
+  background: #7DAED6;
+}
