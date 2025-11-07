@@ -440,49 +440,29 @@ h2 {
   margin-bottom: 50px;
 }
 
-/* === GRID STRUKTUR === */
+/* === GRID STRUKTUR (agar sejajar ke samping) === */
 .grid-struktur {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;       /* biar turun ke baris baru kalau terlalu panjang */
   justify-content: center;
+  align-items: flex-start;
   gap: 30px;
+  margin-top: 40px;
 }
 
 /* === KARTU STRUKTUR === */
 .card-struktur {
   background: rgba(255, 255, 255, 0.85);
-  border: 2px solid var(--accent);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  border: 2px solid #b9ceeb;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(137, 170, 210, 0.25);
   width: 220px;
   text-align: center;
   padding: 18px;
   transition: all 0.4s ease;
   backdrop-filter: blur(8px);
-  position: relative;
-  overflow: hidden;
 }
 
-/* ✨ efek glow lembut */
-.card-struktur::before {
-  content: "";
-  position: absolute;
-  inset: -40%;
-  background: radial-gradient(circle, rgba(185, 206, 235, 0.5), transparent 70%);
-  filter: blur(30px);
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  z-index: 0;
-}
-
-.card-struktur:hover::before {
-  opacity: 1;
-}
-
-.card-struktur:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 10px 25px rgba(137, 170, 210, 0.4);
-}
 
 /* === FOTO STRUKTUR === */
 .card-struktur img {
